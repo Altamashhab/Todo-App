@@ -2,7 +2,6 @@ services:
   - type: web
     name: todo-backend
     env: node
+    rootDir: .  # Current directory is correct
     buildCommand: "npm install"
     startCommand: "npm start"
-    ignore:
-      - client/
